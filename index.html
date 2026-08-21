@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcelo Expedito — Odisseia</title>
+  <meta name="description" content="Portfólio de Marcelo Expedito — desenvolvedor em formação. Uma jornada épica pelo código." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <noscript>
+    <style>
+      #gate, #intro { display: none !important; }
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .reveal-hero { opacity: 1 !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <div class="gate" id="gate" role="button" tabindex="0" aria-label="Clique para iniciar a jornada">
+    <div class="gate__panel gate__panel--l" aria-hidden="true"></div>
+    <div class="gate__panel gate__panel--r" aria-hidden="true"></div>
+    <div class="gate__content">
+      <svg class="gate__helmet" viewBox="0 0 200 230" aria-hidden="true">
+        <defs>
+          <linearGradient id="gCrest" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e0483a"/>
+            <stop offset=".55" stop-color="#a3231c"/>
+            <stop offset="1" stop-color="#6d1512"/>
+          </linearGradient>
+          <linearGradient id="gHelm" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ecd27a"/>
+            <stop offset=".45" stop-color="#c9a227"/>
+            <stop offset="1" stop-color="#6e5426"/>
+          </linearGradient>
+          <radialGradient id="gFace" cx=".5" cy=".45" r=".75">
+            <stop offset="0" stop-color="#000000"/>
+            <stop offset="1" stop-color="#171208"/>
+          </radialGradient>
+        </defs>
+        <path d="M24 120 C30 46 62 12 100 10 C138 12 170 46 176 120 C154 96 129 86 100 86 C71 86 46 96 24 120 Z" fill="url(#gCrest)"/>
+        <path d="M34 114 C38 60 64 32 100 32 C136 32 162 60 166 114 L166 152 L149 201 L125 179 L100 191 L75 179 L51 201 L34 152 Z" fill="url(#gHelm)" stroke="#3d2f14" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M63 127 L137 127 L133 159 L117 177 L100 185 L83 177 L67 159 Z" fill="url(#gFace)"/>
+        <path d="M91 123 L109 123 L106 174 L94 174 Z" fill="#d9b44f" stroke="#3d2f14" stroke-width="1.5"/>
+        <path d="M70 133 L90 139" stroke="#f4e2a8" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
+        <path d="M130 133 L110 139" stroke="#f4e2a8" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
+        <circle cx="52" cy="108" r="2.4" fill="#5d4720"/>
+        <circle cx="76" cy="102" r="2.4" fill="#5d4720"/>
+        <circle cx="124" cy="102" r="2.4" fill="#5d4720"/>
+        <circle cx="148" cy="108" r="2.4" fill="#5d4720"/>
+      </svg>
+      <p class="gate__kicker">PORTFÓLIO DE MARCELO EXPEDITO</p>
+      <h2 class="gate__title">ODISSEIA</h2>
+      <p class="gate__cta">— CLIQUE PARA INICIAR A JORNADA —</p>
+    </div>
+  </div>
+
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <div class="intro-line"></div>
+      <p class="intro-eyebrow">Uma jornada está para começar</p>
+      <h2 class="intro-title">MARCELO&nbsp;EXPEDITO</h2>
+      <p class="intro-sub">PORTFÓLIO — MMXXVI</p>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <aside class="columns" aria-hidden="true">
+    <div class="column column--left">
+      <span class="column__capital"></span>
+      <span class="column__flute"></span>
+      <span class="column__base"></span>
+    </div>
+    <div class="column column--right">
+      <span class="column__capital"></span>
+      <span class="column__flute"></span>
+      <span class="column__base"></span>
+    </div>
+  </aside>
+
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo"><span class="nav__lambda">Λ</span>ME<span>&nbsp;·&nbsp;ODISSEIA</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#origem">I · A Origem</a>
+      <a href="#arsenal">II · O Arsenal</a>
+      <a href="#batalhas">III · As Batalhas</a>
+      <a href="#chamado">IV · O Chamado</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Mudar idioma / Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CAPÍTULO 0 — HERO -->
+    <section class="chapter hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="img/agamemnon.jpg" alt="" loading="eager" decoding="async" />
+      </div>
+      <canvas id="embers" aria-hidden="true"></canvas>
+      <div class="hero__watermark" aria-hidden="true">
+        <svg viewBox="0 0 200 230">
+          <defs>
+            <linearGradient id="wCrest" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#e0483a"/>
+              <stop offset=".55" stop-color="#a3231c"/>
+              <stop offset="1" stop-color="#6d1512"/>
+            </linearGradient>
+            <linearGradient id="wHelm" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ecd27a"/>
+              <stop offset=".45" stop-color="#c9a227"/>
+              <stop offset="1" stop-color="#6e5426"/>
+            </linearGradient>
+            <radialGradient id="wFace" cx=".5" cy=".45" r=".75">
+              <stop offset="0" stop-color="#000000"/>
+              <stop offset="1" stop-color="#171208"/>
+            </radialGradient>
+          </defs>
+          <path d="M24 120 C30 46 62 12 100 10 C138 12 170 46 176 120 C154 96 129 86 100 86 C71 86 46 96 24 120 Z" fill="url(#wCrest)"/>
+          <path d="M34 114 C38 60 64 32 100 32 C136 32 162 60 166 114 L166 152 L149 201 L125 179 L100 191 L75 179 L51 201 L34 152 Z" fill="url(#wHelm)"/>
+          <path d="M63 127 L137 127 L133 159 L117 177 L100 185 L83 177 L67 159 Z" fill="url(#wFace)"/>
+          <path d="M91 123 L109 123 L106 174 L94 174 Z" fill="#d9b44f"/>
+        </svg>
+      </div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero-kicker reveal-hero">SÃO PAULO · BRASIL — FORJADO COM DISCIPLINA ESPARTANA</p>
+        <h1 class="hero-title">
+          <span class="hero-title__word" data-word="MARCELO">MARCELO</span>
+          <span class="hero-title__word hero-title__word--gold" data-word="EXPEDITO">EXPEDITO</span>
+        </h1>
+        <div class="hero-rule reveal-hero"><i></i><b>✦</b><i></i></div>
+        <p class="hero-tagline reveal-hero">Transformando Ideias em <em>arquiteturas digitais</em>.</p>
+        <div class="hero-cta reveal-hero">
+          <a href="#batalhas" class="btn btn--gold">Ver as Batalhas</a>
+          <a href="#chamado" class="btn btn--ghost">O Chamado</a>
+        </div>
+      </div>
+      <a href="#origem" class="scroll-cue reveal-hero" aria-label="Rolar para a próxima seção">
+        <span>Iniciar a jornada</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- CAPÍTULO I — A ORIGEM -->
+    <section class="chapter origem" id="origem">
+      <span class="chapter-num" aria-hidden="true">I</span>
+      <header class="chapter-head" data-reveal>
+        <p class="chapter-head__num">CAPÍTULO I</p>
+        <h2 class="chapter-head__title">A Origem</h2>
+        <div class="chapter-rule"><i></i><b>✦</b><i></i></div>
+      </header>
+      <div class="origem__grid">
+        <div class="origem__text" data-reveal>
+          <p class="lead">
+            Todo herói tem uma origem. A minha começa em São Paulo, entre linhas de código,
+            telas acesas de madrugada e a vontade de construir coisas que funcionem —
+            e que impressionem.
+          </p>
+          <p>
+            Sou estudante de <strong>Desenvolvimento de Sistemas</strong> — faço o curso na
+            <strong>Etec Horácio Augusto da Silveira</strong> e também na
+            <strong>EE Afrânio Peixoto</strong>, trilhando o caminho para me tornar
+            <strong>desenvolvedor Full Stack</strong>.
+            Cada projeto é uma batalha, cada bug é um minotauro esperando ser enfrentado.
+          </p>
+          <blockquote class="quote">
+            “Transformando Ideias em arquiteturas digitais.”
+            <cite>— Marcelo Expedito</cite>
+          </blockquote>
+        </div>
+        <div class="stele" data-reveal>
+          <h3>ESTELA DO HERÓI</h3>
+          <ul>
+            <li><span>Nome</span><strong>Marcelo Expedito</strong></li>
+            <li><span>Território</span><strong>São Paulo — Brasil</strong></li>
+            <li><span>Curso</span><strong>Desenvolvimento de Sistemas</strong></li>
+            <li><span>Escolas</span><strong>Etec Horácio Augusto da Silveira · EE Afrânio Peixoto</strong></li>
+            <li><span>Destino</span><strong>Desenvolvedor Full Stack</strong></li>
+          </ul>
+          <div class="stele__sigil" aria-hidden="true">Λ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO II — O ARSENAL -->
+    <section class="chapter arsenal" id="arsenal">
+      <span class="chapter-num" aria-hidden="true">II</span>
+      <header class="chapter-head" data-reveal>
+        <p class="chapter-head__num">CAPÍTULO II</p>
+        <h2 class="chapter-head__title">O Arsenal</h2>
+        <div class="chapter-rule"><i></i><b>✦</b><i></i></div>
+        <p class="chapter-head__desc">Armas forjadas em horas de estudo, batalhas e refatorações.<span class="greek">ΜΟΛΩΝ ΛΑΒΕ</span></p>
+      </header>
+      <div class="arsenal__grid">
+        <article class="arsenal-card" data-reveal>
+          <h3><span class="arsenal-card__icon">⚔</span> Frontend</h3>
+          <ul class="skills">
+            <li class="skill"><span class="skill__name">Angular</span><span class="skill__bar"><i data-level=".85"></i></span></li>
+            <li class="skill"><span class="skill__name">TypeScript</span><span class="skill__bar"><i data-level=".8"></i></span></li>
+            <li class="skill"><span class="skill__name">JavaScript</span><span class="skill__bar"><i data-level=".85"></i></span></li>
+            <li class="skill"><span class="skill__name">HTML</span><span class="skill__bar"><i data-level=".9"></i></span></li>
+            <li class="skill"><span class="skill__name">CSS</span><span class="skill__bar"><i data-level=".9"></i></span></li>
+          </ul>
+        </article>
+        <article class="arsenal-card" data-reveal>
+          <h3><span class="arsenal-card__icon">🛡</span> Backend &amp; Dados</h3>
+          <ul class="skills">
+            <li class="skill"><span class="skill__name">Python</span><span class="skill__bar"><i data-level=".75"></i></span></li>
+            <li class="skill"><span class="skill__name">C#</span><span class="skill__bar"><i data-level=".7"></i></span></li>
+            <li class="skill"><span class="skill__name">C</span><span class="skill__bar"><i data-level=".65"></i></span></li>
+            <li class="skill"><span class="skill__name">MySQL</span><span class="skill__bar"><i data-level=".75"></i></span></li>
+          </ul>
+        </article>
+        <article class="arsenal-card" data-reveal>
+          <h3><span class="arsenal-card__icon">⚒</span> Ferramentas &amp; Treinamento</h3>
+          <ul class="tags">
+            <li>Git</li>
+            <li>Lógica de Programação</li>
+            <li>Análise de Sistemas</li>
+          </ul>
+          <p class="training-label">EM TREINAMENTO PARA AS PRÓXIMAS BATALHAS</p>
+          <ul class="tags tags--training">
+            <li>C# Avançado</li>
+            <li>Python</li>
+            <li>Angular</li>
+            <li>Fullstack</li>
+            <li>Arquitetura de Software</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO III — AS BATALHAS -->
+    <section class="chapter batalhas" id="batalhas">
+      <span class="chapter-num" aria-hidden="true">III</span>
+      <header class="chapter-head" data-reveal>
+        <p class="chapter-head__num">CAPÍTULO III</p>
+        <h2 class="chapter-head__title">As Batalhas</h2>
+        <div class="chapter-rule"><i></i><b>✦</b><i></i></div>
+        <p class="chapter-head__desc">Campos onde o código foi posto à prova.</p>
+      </header>
+      <div class="battles__grid">
+        <article class="battle-card battle-card--main" data-reveal>
+          <div class="battle-card__top">
+            <span class="battle-card__num">BATALHA I</span>
+            <h3>SmartMarket Audit</h3>
+          </div>
+          <p>
+            Sistema web para conferência de compras em mercados de autoatendimento:
+            cruza produtos do banco de dados com itens apontados pelo fiscal da porta,
+            gera relatórios completos e exportação em PDF.
+          </p>
+          <ul class="battle-card__stack">
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Relatórios PDF</li>
+          </ul>
+          <a class="btn btn--ghost btn--small" href="https://github.com/Marcelo-Slv/smartmarket-audit" target="_blank" rel="noopener noreferrer">
+            Ver campo de batalha ↗
+          </a>
+        </article>
+        <article class="battle-card battle-card--fog" data-reveal>
+          <div class="battle-card__top">
+            <span class="battle-card__num">BATALHA II</span>
+            <h3>Próximas Conquistas</h3>
+          </div>
+          <p>
+            Novas campanhas estão sendo forjadas no calor da forja.
+            Sempre aprendendo, sempre marchando.
+          </p>
+          <p class="battle-card__soon">— EM BREVE —</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO IV — O CHAMADO -->
+    <section class="chapter chamado" id="chamado">
+      <span class="chapter-num" aria-hidden="true">IV</span>
+      <header class="chapter-head" data-reveal>
+        <p class="chapter-head__num">CAPÍTULO IV</p>
+        <h2 class="chapter-head__title">O Chamado</h2>
+        <div class="chapter-rule"><i></i><b>✦</b><i></i></div>
+        <p class="chapter-head__desc">Os oráculos dizem que grandes projetos precisam de grandes aliados. Vamos construir juntos?</p>
+      </header>
+      <div class="cv-cta" data-reveal>
+        <a class="btn btn--gold" href="cv/Marcelo-Expedito-CV.pdf" download>Recrutar este guerreiro — CV em PDF</a>
+      </div>
+      <div class="chamado__links" data-reveal>
+        <a class="oracle-link" href="https://github.com/Marcelo-Slv" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.11-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .31.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+          <span>GitHub</span><small>Marcelo-Slv</small>
+        </a>
+        <a class="oracle-link" href="https://www.linkedin.com/in/marcelo-silva-46a0a2361/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+          <span>LinkedIn</span><small>marcelo-silva</small>
+        </a>
+        <a class="oracle-link" href="https://www.instagram.com/marcelo_exped/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07Zm0 2.91a6.93 6.93 0 1 0 0 13.86 6.93 6.93 0 0 0 0-13.86Zm0 11.43a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Zm7.2-11.71a1.62 1.62 0 1 1-3.24 0 1.62 1.62 0 0 1 3.24 0Z"/></svg>
+          <span>Instagram</span><small>@marcelo_exped</small>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p data-reveal>MARCELO EXPEDITO — <span>MMXXVI</span></p>
+    <p class="footer__motto" data-reveal>“Com o escudo… ou sobre ele.”<cite>— despedida espartana</cite></p>
+  </footer>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Ativar ou desativar som" aria-pressed="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3z"/>
+      <path class="snd-wave" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15.5 8.5a5 5 0 0 1 0 7"/>
+      <path class="snd-wave snd-wave--2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M18 6a8.5 8.5 0 0 1 0 12"/>
+      <line class="snd-slash" x1="4" y1="4" x2="21" y2="21" stroke="#e0483a" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
