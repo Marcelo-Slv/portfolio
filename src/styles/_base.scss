@@ -1,0 +1,68 @@
+@use "tokens" as *;
+
+// ============================================================
+// BASE — reset, corpo, seleção, acesso e reveals
+// ============================================================
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: $paper;
+  color: $ink;
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.is-locked { overflow: hidden; }
+
+::selection {
+  background: $accent;
+  color: $white;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: $paper; }
+::-webkit-scrollbar-thumb {
+  background: $ink-soft;
+  border-radius: 6px;
+  border: 2px solid $paper;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+[appReveal] { opacity: 0; }
+
+/* ---------- Preferência por menos movimento ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  app-preloader {
+    display: none;
+  }
+
+  [appReveal],
+  [data-anim] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+
+  .line-mask__inner { transform: none !important; }
+  .marquee { animation: none !important; }
+  .transition-overlay { display: none; }
+}

@@ -2,3 +2,17 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Angular
+node_modules/
+dist/
+out-tsc/
+bazel-out/
+.angular/
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json

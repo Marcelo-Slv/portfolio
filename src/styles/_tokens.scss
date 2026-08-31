@@ -1,0 +1,59 @@
+// ============================================================
+// TOKENS — paleta, tipografia, ritmo do novo tema
+// Paleta em tom "papel + tinta", limpa e editorial.
+// ============================================================
+
+// Cores
+$paper: #f0ebe2; // fundo claro quente
+$paper-2: #e8e1d4; // superfícies secundárias
+$card: #faf7f1;
+$white: #fbfaf7;
+
+$ink: #1c1916; // texto principal
+$ink-soft: #6b6257; // texto secundário
+$line: rgba(28, 25, 22, 0.14);
+$line-strong: rgba(28, 25, 22, 0.32);
+
+$accent: #e34a2a; // laranja-vivo — único acento
+$accent-deep: #c03416;
+$accent-soft: rgba(227, 74, 42, 0.12);
+
+$dark: #161412; // seções escuras
+$dark-2: #1e1b18;
+$on-dark: #efe8db;
+$on-dark-muted: #a89d8c;
+$on-dark-line: rgba(239, 232, 219, 0.14);
+
+// Tipografia
+$font-display: "Fraunces", serif;
+$font-body: "Manrope", sans-serif;
+$font-mono: "IBM Plex Mono", monospace;
+
+// Easing
+$ease: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+/* ---------- Mixins ---------- */
+
+@mixin label($size: 0.7rem, $spacing: 0.24em) {
+  font-family: $font-mono;
+  font-size: $size;
+  letter-spacing: $spacing;
+  text-transform: uppercase;
+}
+
+@mixin container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+@mixin pillar($color, $width: 1px) {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $width;
+  background: $color;
+}
