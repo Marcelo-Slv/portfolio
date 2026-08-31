@@ -15,3 +15,6 @@ Portfólio pessoal em **Angular 22** com tema editorial "papel & tinta": visual 
 - SCSS (tokens em `src/styles/_tokens.scss`)
 - GSAP + ScrollTrigger
 - Fonts: Fraunces, Manrope, IBM Plex Mono
+
+- #Link
+https://marcelo-slv.github.io/portfolio/
