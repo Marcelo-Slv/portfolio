@@ -129,10 +129,10 @@ import { PROJECTS, MARQUEE_ITEMS } from '../../projects.data';
         <div class="cta-strip__bg"></div>
         <h2 data-anim="mask">
           <span class="line-mask"><span class="inner">Vamos construir </span></span>
-          <span class="line-mask"><span class="inner"><em>algo junto?</em></span></span>
+          <span class="line-mask"><span class="inner"><em>algo juntos?</em></span></span>
         </h2>
         <a class="btn btn--accent" routerLink="/contact" appMagnet>
-          Falar comigo
+          Fale comigo
           <svg appIcon="arrowRight"></svg>
         </a>
       </section>

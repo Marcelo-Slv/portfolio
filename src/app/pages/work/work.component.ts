@@ -29,7 +29,7 @@ const FILTERS: { key: Filter; label: string }[] = [
           <p class="section-head__label"><i></i>Portfólio</p>
           <h1 class="section-head__title">Projetos &amp; experimentos.</h1>
           <p class="section-head__desc">
-            Sistemas, interfaces e marcas que desenvolvi no caminho de me tornar Full Stack.
+            Sistemas, interfaces e marcas que desenvolvi no caminho para me tornar Full Stack.
           </p>
         </header>
 

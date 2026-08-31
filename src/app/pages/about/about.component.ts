@@ -39,7 +39,7 @@ import { ParallaxDirective } from '../../directives/parallax.directive';
 
         <div class="timeline">
           <div class="tl-row" appReveal="flip">
-            <span class="tl-row__when">2024 — hoje</span>
+            <span class="tl-row__when">2026-2027</span>
             <div class="tl-row__what">
               <h3>Técnico em Desenvolvimento de Sistemas</h3>
               <p>Etec Horácio Augusto da Silveira — lógica, orientação a objetos, banco de dados e projetos reais.</p>
